@@ -65,6 +65,36 @@ function ubah_genre($data)
 
 // USER
 
+
+function registrasi($data)
+{
+    global $conn;
+    $full_name = htmlspecialchars($data["full_name"]);
+    $username = htmlspecialchars($data["username"]);
+    $password = htmlspecialchars($data["password"]);
+    $password2 = htmlspecialchars($data["password2"]);
+    $status = htmlspecialchars($data["status"]);
+
+    //cek konfirmasi password
+    if ($password !== $password2) {
+        echo "<script>
+    alert('konfirmasi password tidak sesuai!');
+    </script>";
+        return false;
+    }
+
+
+    $query = "
+                    INSERT INTO user 
+                        (`full_name`,`username`, `password`, `status`) 
+                    VALUES 
+                        ('$full_name', '$username',' $password','$status')
+                ";
+
+    mysqli_query($conn, $query);
+    return mysqli_affected_rows($conn);
+
+}
 function tambah_user($data)
 {
     global $conn;
@@ -179,7 +209,7 @@ function upload()
     if ($error === 4) {
         echo " <script>
               alert('Pilih gambar terlebih dahulu!');
-      </script>";
+      </>";
         return false;
     }
 
