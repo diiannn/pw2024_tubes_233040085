@@ -1,0 +1,21 @@
+/* .navbar {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+}
+.navbar-nav .nav-link:hover {
+  color: red;
+} */
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+  font-size: 18px;
+}
+
+.navbar-light .navbar-brand {
+  font-size: 30px;
+}
+
+.bg-dark {
+  background-color: black !important;
+}
