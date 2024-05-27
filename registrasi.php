@@ -1,19 +1,11 @@
 <?php require 'functions.php' ?>
 <?php require 'views/partial_guest/header.php'; ?>
 <?php
-// if (isset($_POST["register"])) {
-//     if (registrasi($_POST) > 0) {
-//         echo " <script>
-//         elert ('user baru berhsil ditambahkan!');
-//         </script>";
-//     } else {
-//         echo mysqli_error($conn);
-//     }
-// }
+
 if (isset($_POST['register'])) {
     // var_dump($_POST);
     // die;
-    if (tambah_user($_POST) > 0) {
+    if (registrasi($_POST) > 0) {
         echo "<script>
         alert('Data berhasil ditambahkan!');
         document.location.href = 'user_list.php';

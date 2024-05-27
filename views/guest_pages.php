@@ -1,6 +1,7 @@
 <?php require 'functions.php'; ?>
 <?php
-// $slidebar = query("SELECT * FROM slidebar WHERE status='1'");
+
+
 $movie = query("SELECT movie.*, genre.genre_name
                 FROM movie
                 INNER JOIN genre

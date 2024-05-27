@@ -1,5 +1,10 @@
 <?php require 'functions.php'; ?>
 <?php session_start(); ?>
+<!-- cookie
+//if (isset($_COOKIE['login'])) {
+    //if ($_COOKIE['login'] == 'true') {
+       // $_SESSION['login'] = true;
+    //}}  -->
 <?php require 'views/partial_guest/header.php'; ?>
 
 <?php
@@ -25,7 +30,9 @@ if (isset($_POST["submit"])) {
         $_SESSION['username'] = $data['username'];
         $_SESSION['status'] = $data['status'];
         $_SESSION['iduser'] = $data['iduser'];
-        header("Location: index.php");
+        //cookie
+        // setcookie('login', 'true', time() + 60);
+        // header("Location: index.php");
     } else {
         echo "<script>
             alert('Login Gagal!');
@@ -57,6 +64,13 @@ if (isset($_POST["submit"])) {
                                     <label for="password" class="form-label">Password</label>
                                     <input type="password" class="form-control" id="password" name="password" required>
                                 </div>
+                                <!-- <div class="form-check text-start pb-2">
+                                    <input class="form-check-input" type="checkbox" value="" name="remember"
+                                        id="remember">
+                                    <label class="form-check-label" for="remember">
+                                        remember
+                                    </label>
+                                </div> -->
 
 
                                 <button type="submit" name="submit" class="btn btn-danger d-grid gap-2 col-7 mx-auto"

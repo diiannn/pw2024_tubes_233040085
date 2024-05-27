@@ -1,5 +1,5 @@
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light bg-transparent fixed-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-light bg-transparent fixed-top" id="nav">
     <div class="container ">
         <a class="navbar-brand" href="#"><span>D</span>Cinema</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -25,7 +25,7 @@
                     <a class="nav-link" href="#">HOME</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">ABOUT</a>
+                    <a class="nav-link" href="kategori.php">ABOUT</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#movie">MOVIE</a>
