@@ -65,7 +65,6 @@ function ubah_genre($data)
 
 // USER
 
-
 function registrasi($data)
 {
     global $conn;
@@ -88,7 +87,7 @@ function registrasi($data)
                     INSERT INTO user 
                         (`full_name`,`username`, `password`, `status`) 
                     VALUES 
-                        ('$full_name', '$username',' $password','$status')
+                        ('$full_name', '$username','$password','1')
                 ";
 
     mysqli_query($conn, $query);
@@ -107,7 +106,7 @@ function tambah_user($data)
                     INSERT INTO user 
                         (`full_name`,`username`, `password`, `status`) 
                     VALUES 
-                        ('$full_name', '$username',' $password','$status')
+                        ('$full_name', '$username','$password','$status')
                 ";
 
     mysqli_query($conn, $query);
@@ -232,7 +231,7 @@ function upload()
         return false;
     }
     // lolos pengecekan, gambar siap di upload
-    //generate nama gambar baru
+    //Buat nama gambar baru
     $namaFileBaru = uniqid();
     $namaFileBaru .= '.';
     $namaFileBaru .= $ekstensiGambar;
@@ -300,6 +299,7 @@ function hapus_movie($id_movie)
     return mysqli_affected_rows($conn);
 }
 
+//SEARCH //
 function cari_genre($keyword)
 {
     $query = "SELECT * FROM genre WHERE genre_name LIKE '%$keyword%'";
@@ -333,7 +333,6 @@ function cari_user($keyword)
     $query = "SELECT * FROM user WHERE full_name LIKE '%$keyword%' OR username LIKE '%$keyword%'";
     return query($query);
 }
-
 
 
 ?>

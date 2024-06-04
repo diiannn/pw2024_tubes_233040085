@@ -12,7 +12,11 @@
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
         <link rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bootstrap-datepicker@1.10.0/dist/css/bootstrap-datepicker3.min.css">
-        <link rel="stylesheet" href="views/css/style2.css">
+
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="views/css/adminstyle.css">
+
     </head>
 
-    <body class="bg-dark" data-bs-theme="dark">
+    <body class="bg-dark text-white" data-bs-theme="dark">

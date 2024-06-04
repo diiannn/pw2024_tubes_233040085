@@ -1,11 +1,14 @@
 <div class="container">
-    <div class="containertext-left pt-5">
+    <div class="containertext-left pt-3">
         <div class="row">
             <div class="col">
                 <h1 class="list">List <span class="badge text-bg-secondary">Movie</span></h1>
                 <hr>
-                <a class=" btn btn-primary m-1" href="movie_add.php" target="blank" role="button">Tambah</a> | <a
-                    class=" btn btn-danger m-1" href="cetak.php" role="button">Cetak</a>
+                <a class=" btn btn-primary m-1" href="movie_add.php" role="button"><i class="bi bi-plus"></i>
+                    <span>Tambah</span></a>
+                <a class=" btn btn-danger m-1" href="cetak.php" target="_blank" role="button"><i
+                        class="bi bi-printer"></i> <span>Cetak</span>
+                </a>
                 <form class="form-cari" action="" method="POST">
                     <div class="input-group mb-3">
                         <input type="text" name="keyword" class="form-control" placeholder="Cari"
@@ -79,9 +82,11 @@
                                 <td><img src="images/<?= $mv["picture"]; ?>" alt="gambar movie" width="100"></td>
                                 <td><?= $mv["genre_name"]; ?></td>
                                 <td class="text-center">
-                                    <a href="movie_update.php?id=<?= $mv["id_movie"]; ?>" class="btn btn-warning"> Ubah</a>
+                                    <a href="movie_update.php?id=<?= $mv["id_movie"]; ?>" class="btn btn-warning">
+                                        <i class="bi bi-pencil-square"></i></a>
                                     <a href="movie_delete.php?id=<?= $mv['id_movie']; ?>" class="btn btn-danger"
-                                        onclick="return confirm('Yakin')">Hapus</a>
+                                        onclick="return confirm('Yakin')"><i class="bi bi-trash"
+                                            style="color:black;"></i></a>
                                 </td>
                             </tr>
                             <?php $i++; ?>

@@ -7,11 +7,7 @@ $movie = query("SELECT movie.*, genre.genre_name
                 ON movie.genre_idgenre = genre.idgenre");
 
 $rating = query("SELECT id_movie, title, description, release_year,rating, picture FROM `movie` ORDER BY `movie`.`rating` DESC LIMIT 5;");
-// $genre_categories = query("SELECT idgenre, genre_name FROM `genre`;");
-// $genre_romance = query("SELECT movie.*, genre.genre_name FROM movie INNER JOIN genre ON movie.genre_idgenre = genre.idgenre WHERE genre_name = 'Romance';");
-// $genre_animasi = query("SELECT movie.*, genre.genre_name FROM movie INNER JOIN genre ON movie.genre_idgenre = genre.idgenre WHERE genre_name = 'Animasi';");
-// $genre_comedy = query("SELECT movie.*, genre.genre_name FROM movie INNER JOIN genre ON movie.genre_idgenre = genre.idgenre WHERE genre_name = 'Comedy';");
-// $genre_Fantasy = query("SELECT movie.*, genre.genre_name FROM movie INNER JOIN genre ON movie.genre_idgenre = genre.idgenre WHERE genre_name = 'Fantasy';");
+
 
 
 if (isset($_POST['cari'])) {

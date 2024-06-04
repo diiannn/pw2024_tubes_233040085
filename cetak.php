@@ -24,7 +24,6 @@ $html = '<!DOCTYPE html>
     <th>Description</th>
     <th>Release year</th>
     <th>Rating</th>
-    <th>Trailer</th>
     <th>Age rating</th>
     <th>Writer</th>
     <th>Director</th>
@@ -33,13 +32,12 @@ $html = '<!DOCTYPE html>
   </tr>';
 $i = 1;
 foreach ($movie as $mv) {
-    $html .= '<tr>
+  $html .= '<tr>
         <td>' . $i++ . '</td>
         <td>' . $mv["title"] . '</td>
         <td><img src="images/' . $mv["picture"] . '" width="100"></td>
         <td>' . $mv["description"] . '</td>
         <td>' . $mv["release_year"] . '</td>
-        <td>' . $mv["movie_trailer"] . '</td>
         <td>' . $mv["rating"] . '</td>
         <td>' . $mv["age_rating"] . '</td>
         <td>' . $mv["writer"] . '</td>

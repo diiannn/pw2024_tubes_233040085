@@ -2,20 +2,29 @@
 <?php
 
 
+// page
+$jmldataperhalaman = 10;
+$jumlahData = count(query("SELECT movie.*, genre.genre_name 
+FROM movie
+INNER JOIN genre
+ON movie.genre_idgenre = genre.idgenre"));
+$jumlahHalaman = ceil($jumlahData / $jmldataperhalaman);
+//var_dump($jumlahHalaman);
+$halamanAktif = (isset($_GET["halaman"])) ? $_GET["halaman"] : 1;
+$awalData = ($jmldataperhalaman * $halamanAktif) - $jmldataperhalaman;
+
+
 $movie = query("SELECT movie.*, genre.genre_name
                 FROM movie
                 INNER JOIN genre
-                ON movie.genre_idgenre = genre.idgenre");
+                ON movie.genre_idgenre = genre.idgenre LIMIT $awalData, $jmldataperhalaman");
 
-$rating = query("SELECT id_movie, title, description, release_year,rating, picture FROM `movie` ORDER BY `movie`.`rating` DESC LIMIT 5;");
+$rating = query("SELECT movie.*, genre.genre_name FROM movie INNER JOIN genre ON movie.genre_idgenre = genre.idgenre ORDER BY `movie`.`rating` DESC LIMIT 5;");
 
 
-if (isset($_POST['cari'])) {
-    $movie = cari_movie($_POST['keyword']);
-}
 ?>
 <?php require 'views/partial_guest/header.php'; ?>
 <?php require 'views/partial_guest/navigation.php'; ?>
-<?php require 'views/partial_guest/slide.php'; ?>
+<?php require 'views/partial_guest/header2.php'; ?>
 <?php require 'views/partial_guest/content.php'; ?>
 <?php require 'views/partial_guest/footer.php'; ?>

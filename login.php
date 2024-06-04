@@ -26,7 +26,8 @@ if (isset($_POST["submit"])) {
         $_SESSION['username'] = $data['username'];
         $_SESSION['status'] = $data['status'];
         $_SESSION['iduser'] = $data['iduser'];
-
+        header('Location: index.php');
+        exit;
     } else {
         echo "<script>
             alert('Login Gagal!');
@@ -38,11 +39,11 @@ if (isset($_POST["submit"])) {
 ?>
 
 <!-- Content -->
-<section class="login vh-100" style="background-color:#76ABAE;">
+<section class="login vh-100">
     <div class="container py-2 h-100">
         <div class="row d-flex justify-content-center align-items-center h-100">
             <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-                <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                <div class="card bg-dark text-white border border-light" style="border-radius: 1rem;">
                     <div class="card-body p-5 text-center">
 
                         <div class="mb-md-5 mt-md-4 pb-5">

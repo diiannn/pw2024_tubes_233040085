@@ -59,7 +59,7 @@ CREATE TABLE `movie` (
   `title` varchar(100) NOT NULL,
   `description` text,
   `release_year` year DEFAULT NULL,
-  `rating` decimal(10,0) DEFAULT NULL,
+  `rating` decimal(10,1) DEFAULT NULL,
   `movie_trailer` varchar(225) DEFAULT NULL,
   `age_rating` varchar(5) DEFAULT NULL,
   `writer` varchar(225) DEFAULT NULL,

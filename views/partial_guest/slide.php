@@ -10,7 +10,7 @@
     </div>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="../../TESTPHP/images/slide.jpeg" class="d-block w-100" alt="..."
+            <img src="../../PW2024_TUBES_233040085/images/spider.jpg" class="d-block w-100" alt="..."
                 style="width:700px; height: 500px;;">
             <div class="carousel-caption d-none d-md-block">
                 <h5>First slide label</h5>

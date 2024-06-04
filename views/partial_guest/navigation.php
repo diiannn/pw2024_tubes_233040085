@@ -1,13 +1,13 @@
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light bg-transparent fixed-top" id="nav">
     <div class="container ">
-        <a class="navbar-brand" href="#"><span>D</span>Cinema</a>
+        <a class="navbar-brand position-absolute top-0 start-0" href="#"><img src="images/logo.png" style="width:180px;"
+                alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
             <form class="d-flex mx-auto my-2" role="search" action="" method="POST">
                 <input class="form-control mx-auto rounded-pill" type="search" name="keyword" id="keyword"
                     placeholder="Search" aria-label="Search" autocomplete="off" style="width:600px" />
@@ -22,12 +22,12 @@
             </form>
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">HOME</a>
+                    <a class="nav-link fw-bold" href="index.php">HOME</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="kategori.php">ABOUT</a>
+                <li class="nav-item fw-bold">
+                    <a class="nav-link" href="kategori.php">CATEGORY</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item fw-bold">
                     <a class="nav-link" href="#movie">MOVIE</a>
                 </li>
                 <li class="nav-item dropdown">
@@ -38,8 +38,8 @@
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="login.php">Login</a></li>
                         <li><a class="dropdown-item" href="registrasi.php">Registration</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
+                </li>
         </div>
     </div>
 </nav>

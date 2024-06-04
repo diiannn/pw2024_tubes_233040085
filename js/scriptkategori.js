@@ -1,8 +1,7 @@
 // ambil element
 var keyword = document.getElementById('keyword');
-keyword.style.display = 'block';
 var tombolCari = document.getElementById('tombol-cari');
-var container = document.getElementById('container');
+var kategori = document.getElementById('kategori');
 
 // tambah event
 keyword.addEventListener('keyup', function () {
@@ -12,14 +11,9 @@ keyword.addEventListener('keyup', function () {
   //Cek kesiapan ajax
   xhr.onreadystatechange = function () {
     if (xhr.readyState == 4 && xhr.status == 200) {
-      container.innerHTML = xhr.responseText;
-      var rmovie = document.getElementById('rating-movie');
-      rmovie.style.display = 'none';
-      if (keyword.value == '') {
-        rmovie.style.display = 'block';
-      }
+      kategori.innerHTML = xhr.responseText;
     }
   };
-  xhr.open('GET', 'ajax/search.php?keyword=' + keyword.value, true);
+  xhr.open('GET', 'ajax/searchkat.php?keyword=' + keyword.value, true);
   xhr.send();
 });

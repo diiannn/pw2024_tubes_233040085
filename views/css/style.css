@@ -1,11 +1,4 @@
-/* .navbar {
-  position: fixed;
-  z-index: 10;
-  width: 100%;
-}
-.navbar-nav .nav-link:hover {
-  color: red;
-} */
+/* NAVBAR */
 
 .navbar-light .navbar-nav .nav-link {
   color: white;
@@ -17,5 +10,111 @@
 }
 
 body .bg-dark {
-  background-color: #31363f !important;
+  background-color: #000000 !important;
+}
+
+.nav-item:hover {
+  border-bottom: 3px solid white;
+}
+
+/* CARD*/
+.img-card {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+.img-card .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.4s cubic-bezier(0.88, -0.99, 0, 1.81);
+  transition: all 0.4s cubic-bezier(0.88, -0.99, 0, 1.81);
+}
+.img-card img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.4s cubic-bezier(0.88, -0.99, 0, 1.81);
+  transition: all 0.4s cubic-bezier(0.88, -0.99, 0, 1.81);
+}
+
+.img-card a.info {
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  margin: 150px 0 0;
+  padding: 7px 14px;
+}
+
+.img-card a.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+
+.img-card:hover img {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.img-card:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.img-card:hover a.info {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -ms-transform: translatey(0);
+  -webkit-transform: translatey(0);
+  transform: translatey(0);
+}
+
+.img-card:hover a.info {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+.jumbotron {
+  background-image: url('images/spider.jpg');
+}
+
+/* Halaman Detail */
+
+.container-detail-movie h1 {
+  font-family: 'Lora', serif;
+  font-size: 45px;
+}
+.container-detail-movie h5 {
+  font-family: 'Space Mono', monospace;
+  font-size: 20px;
+}
+.rting h5 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.rting i,
+span {
+  font-size: 17px;
+  font-family: 'Space Mono', monospace;
+  font-weight: 400;
+}
+.detail-mv p {
+  font-family: 'Lora', serif;
+  font-size: 16px;
+}
+/* ... */
+.regis .status {
+  display: none;
 }
