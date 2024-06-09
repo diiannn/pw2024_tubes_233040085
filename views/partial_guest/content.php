@@ -3,7 +3,7 @@
 <div class="" id="container">
     <div class="container text-center pt-5 pb-3" id="rating-movie" style="display:block">
         <h1 class="fw-bold ">Top<sub>5</sub> Rated Movies</h1>
-        <div class="row">
+        <div class="row row-col-1 row-col-md-5 g-3">
             <?php
             foreach ($rating as $rt):
                 ?>
@@ -74,7 +74,7 @@
                     </ul>
                 </nav>
             </div>
-            <div class="row">
+            <div class="row row-col-1 row-col-md-5 g-3">
                 <?php
                 foreach ($movie as $mv):
                     ?>

@@ -64,7 +64,9 @@ if (isset($_POST["submit"])) {
                                     style="">LOG
                                     IN</button>
                             </form>
-
+                            <br>
+                            <p>Don't have account?</p>
+                            <a href="registrasi.php">sign in</a>
                         </div>
 
                     </div>

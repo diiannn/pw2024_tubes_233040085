@@ -1,6 +1,6 @@
 <footer class="text-center">
   <hr>
-  <p>Copyright &copy;Dian Astri 2024 </p>
+  <p>Copyright &copy;2024 Dian Astri </p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

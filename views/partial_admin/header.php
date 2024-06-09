@@ -14,8 +14,6 @@
             href="https://cdn.jsdelivr.net/npm/bootstrap-datepicker@1.10.0/dist/css/bootstrap-datepicker3.min.css">
 
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="views/css/adminstyle.css">
 
     </head>
 

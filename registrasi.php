@@ -36,22 +36,22 @@ if (isset($_POST['register'])) {
                                 <div class="mb-3">
                                     <label for="full_name" class="form-label ">Name</label>
                                     <input type="text" name="full_name" class="form-control" id="full_name"
-                                        placeholder="Add user here">
+                                        placeholder="Add user here" required>
                                 </div>
                                 <div class="mb-3">
                                     <label for="username" class="form-label ">Username</label>
                                     <input type="text" name="username" class="form-control" id="username"
-                                        placeholder="Add username here">
+                                        placeholder="Add username here" required>
                                 </div>
                                 <div class="mb-3">
                                     <label for="password" class="form-label ">password</label>
                                     <input type="password" name="password" class="form-control" id="password"
-                                        placeholder="password">
+                                        placeholder="password" required>
                                 </div>
                                 <div class="mb-3">
                                     <label for="password" class="form-label ">Confirm password</label>
                                     <input type="password" name="password2" class="form-control" id="password2"
-                                        placeholder="Repeat your password">
+                                        placeholder="Repeat your password" required>
                                 </div>
 
                                 <button class="btn btn-danger" type="submit" name="register">Simpan</button> <a

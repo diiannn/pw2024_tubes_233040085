@@ -25,12 +25,12 @@
                     <a class="nav-link fw-bold" href="index.php">HOME</a>
                 </li>
                 <li class="nav-item fw-bold">
-                    <a class="nav-link" href="kategori.php">CATEGORY</a>
-                </li>
-                <li class="nav-item fw-bold">
                     <a class="nav-link" href="#movie">MOVIE</a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item fw-bold">
+                    <a class="nav-link" href="kategori.php">CATEGORY</a>
+                </li>
+                <li class="nav-item dropdown" style="display: none">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         <img src="https://dummyimage.com/30x30/ffd4ff/fff" alt="" class="rounded-circle"></a>

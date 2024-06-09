@@ -4,7 +4,7 @@
             <div class="col">
                 <h1 class="list">List <span class="badge text-bg-secondary">Movie</span></h1>
                 <hr>
-                <a class=" btn btn-primary m-1" href="movie_add.php" role="button"><i class="bi bi-plus"></i>
+                <a class="btn btn-primary m-1" href="movie_add.php" role="button"><i class="bi bi-plus"></i>
                     <span>Tambah</span></a>
                 <a class=" btn btn-danger m-1" href="cetak.php" target="_blank" role="button"><i
                         class="bi bi-printer"></i> <span>Cetak</span>
@@ -21,19 +21,20 @@
                         <ul class="pagination">
                             <li class="page-item">
                                 <?php if ($halamanAktif > 1): ?>
-                                    <a href="?halaman=<?= $halamanAktif - 1 ?> " class="page-link"><span
+                                    <a href="?halaman=<?= $halamanAktif - 1 ?>" class="page-link"><span
                                             aria-hidden="true">&laquo;</span></a>
                                 <?php endif ?>
                             </li>
-                            <li class="page-item d-flex"><?php for ($i = 1; $i <= $jumlahHalaman; $i++): ?>
+
+                            <?php for ($i = 1; $i <= $jumlahHalaman; $i++): ?>
+                                <li class="page-item">
                                     <?php if ($i == $halamanAktif): ?>
-                                        <a href="?halaman=<?= $i; ?>" class="page-link"
-                                            style="baground-color: blue; color: white;"><?= $i; ?></a>
+                                        <a href="?halaman=<?= $i ?>" class="page-link" style=" color: white;"><?= $i ?></a>
                                     <?php else: ?>
-                                        <a href="?halaman=<?= $i; ?>" class="page-link"><?= $i; ?></a>
-                                    <?php endif; ?>
-                                <?php endfor; ?>
-                            </li>
+                                        <a href="?halaman=<?= $i ?>" class="page-link"><?= $i ?></a>
+                                    <?php endif ?>
+                                </li>
+                            <?php endfor ?>
 
                             <li class="page-item">
                                 <?php if ($halamanAktif < $jumlahHalaman): ?>

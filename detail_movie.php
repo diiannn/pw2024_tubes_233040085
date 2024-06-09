@@ -27,13 +27,13 @@ if (isset($_GET['id'])) {
 
             </div>
             <div class="row">
-                <div class="col-9">
+                <div class="col-md-9">
                     <div class="container-detail-movie">
                         <h1><?= $mv["title"]; ?></h1>
                         <h5><?= $mv["release_year"]; ?></h5>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3">
                     <div class="rting pt-2">
                         <div class="row text-start">
                             <div class="col-5">
@@ -41,7 +41,7 @@ if (isset($_GET['id'])) {
                                 <i class="bi bi-star-fill m-1"
                                     style="color:yellow;"></i><span><?= $mv["rating"]; ?>/10</span>
                             </div>
-                            <div class="col-5">
+                            <div class="col-md-5">
                                 <h5>Age Rating</h5>
                                 <span><?= $mv["age_rating"]; ?></span>
                             </div>
@@ -49,10 +49,10 @@ if (isset($_GET['id'])) {
                     </div>
                 </div>
             </div>
-            <div class="col-12">
+            <div class="col-md-12">
                 <div class="row">
                     <div class="col-3">
-                        <div class="img text-center p-0 m-0">
+                        <div class="img-fluid text-center p-0 m-0">
                             <img src="images/<?= $mv["picture"]; ?>" alt=""
                                 style="width: 300px; height: 450px; border: 1px solid;">
                         </div>
@@ -63,16 +63,16 @@ if (isset($_GET['id'])) {
                     </div>
                 </div>
             </div>
-            <div class="col-12">
+            <div class="col-md-12">
                 <div class="detail-mv">
                     <div class="row">
-                        <div class="col-9 pt-2">
+                        <div class="col-md-9 pt-2">
                             <button
                                 class="btn btn-outline-light rounded-pill w-60 h-10"><?= $mv["genre_name"]; ?></button><br>
                             <br>
                             <p><?= $mv["description"]; ?></p>
                         </div>
-                        <div class="col-3">
+                        <div class="col-md-3">
                             <div class="row">
                                 <div class="director">
                                     <hr>

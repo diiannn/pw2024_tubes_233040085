@@ -40,7 +40,7 @@ if (isset($_POST['cari'])) {
                 </div>
             </div>
         <?php else: ?>
-            <div class="row row-cols-1 row-cols-md-5 g-3">
+            <div class="row row-col-1 row-col-md-5 g-3">
                 <?php foreach ($movie as $mv): ?>
                     <div class="col pt-3 pb-4">
                         <div class="card" style="width: 15rem; border:none; border-radius: ;">
