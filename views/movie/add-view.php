@@ -26,7 +26,8 @@
                 </div>
                 <div class="mb-3">
                     <label for="movie_trailer" class="form-label fs-4">Movie trailer <span
-                            class="badge badge-warning">Masukan id link youtube</span></label>
+                            class="badge text-bg-warning fs-6">Masukan
+                            id link youtube</span></label>
                     <input type="text" name="movie_trailer" class="form-control" id="movie_trailer"
                         placeholder="Input link here">
                 </div>
