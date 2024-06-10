@@ -14,7 +14,7 @@
                             <img src="images/<?= $rt["picture"]; ?>" class="card-img-top img-hover" alt="..."
                                 style="widht:300px; height:350px;">
                             <div class="overlay">
-                                <a class="info" href="detail_movie.php?id=<?= $rt["id_movie"]; ?>">Detail here</a>
+                                <a class="info" href="detail_movie.php?id=<?= $rt["id_movie"]; ?>">READ MORE</a>
                             </div>
                         </div>
                         <div class="card-body">
@@ -84,7 +84,7 @@
                                 <img src="images/<?= $mv["picture"]; ?>" class="card-img-top img-hover" alt="..."
                                     style="widht:300px; height:350px;">
                                 <div class="overlay">
-                                    <a class="info" href="detail_movie.php?id=<?= $mv["id_movie"]; ?>">Detail here</a>
+                                    <a class="info" href="detail_movie.php?id=<?= $mv["id_movie"]; ?>">READ MORE</a>
                                 </div>
                             </div>
                             <div class="card-body">

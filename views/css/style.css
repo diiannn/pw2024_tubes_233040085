@@ -118,3 +118,14 @@ span {
 .regis .status {
   display: none;
 }
+iframe {
+  width: 950px;
+  height: 430px;
+}
+
+@media screen and (max-width: 1400px) {
+  iframe {
+    width: 760px;
+    height: 440px;
+  }
+}

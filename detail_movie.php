@@ -57,8 +57,8 @@ if (isset($_GET['id'])) {
                                 style="width: 300px; height: 450px; border: 1px solid;">
                         </div>
                     </div>
-                    <div class="col-9 text-end">
-                        <iframe width='950' height='430' class="mt-2"
+                    <div class=" container-tr col-9 text-end">
+                        <iframe class="mt-2"
                             src='https://www.youtube.com/embed/<?= $mv["movie_trailer"]; ?>?autoplay=1&mute=0'></iframe>
                     </div>
                 </div>
