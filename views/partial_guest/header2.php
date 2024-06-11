@@ -1,7 +1,7 @@
 <header>
     <!-- Background image -->
     <div class="bg-image" style="
-    background-image: url('../../PW2024_TUBES_233040085(PTING)/images/lala.jpeg');
+    background-image: url('../../PW2024_TUBES_233040085/images/lala.jpeg');
     height: 80vh; background-repeat: no-repeat; background-size: cover;
   ">
         <div class="container">
